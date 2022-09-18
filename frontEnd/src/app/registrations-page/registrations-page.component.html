@@ -1,0 +1,30 @@
+
+<div class="container">
+  <h1 class="text-center">List of Student Applications</h1>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name of the Student</th>
+      <th scope="col">Email Address</th>
+      <th scope="col">Reason submitted</th>
+      <th scope="col">Status</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let registration of registrations; index as i">
+      <th>{{i+1}}</th>
+      <td>{{ registration.name }}</td>
+      <td>{{ registration.email}}</td>
+      <td>{{ registration.reason }}</td>
+      <td>{{ registration.status }}</td>
+
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
